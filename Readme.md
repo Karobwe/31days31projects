@@ -11,11 +11,11 @@ I will be coding a web-related project each day and documenting my progress here
 - ...
 - [Conclusion](#conclusion)
 
-## Introduction
+## Introduction {#introduction}
 
 The goal of this challenge is to improve my web development skills by building and documenting a new project each day. I will be using a variety of technologies, including HTML, CSS, JavaScript, and various frameworks and libraries. My aim is to learn something new each day, and to improve my coding skills over the course of the month.
 
-## Day 1
+## Day 1 {#day-1}
 
 [Project name]: [Short description of the project]
 
@@ -25,7 +25,7 @@ The goal of this challenge is to improve my web development skills by building a
 
 [Description of the project, including any difficulties encountered and resources used]
 
-## Day 2
+## Day 2 {#day-2}
 
 [Project name]: [Short description of the project]
 
