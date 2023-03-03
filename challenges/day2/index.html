@@ -1,0 +1,93 @@
+<html class="group/theme">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>#31Days31Projects Challenge: Day 2</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    fontFamily: {
+                        sans: ["Poppins, sans-serif"],
+                    },
+                },
+            }
+        </script>
+    </head>
+
+    <body class="flex items-center justify-center min-h-screen bg-slate-100 text-slate-900">
+        <div class="flex flex-col max-w-5xl h-full m-16 bg-white sm:grid sm:grid-cols-12">
+            <form action="#" class="order-2 mx-2 my-6 sm:order-1 sm:col-span-7 sm:m-8">
+                <div class="space-y-1">
+                    <h1 class="text-xl sm:text-3xl font-medium">Welcome to Design Community</h1>
+                    <p class="text-sm">Already have an ccount? <a class="underline" href="#">Log in</a></p>
+                </div>
+
+                <div class="my-4 space-y-4 text-slate-500">
+                    <fieldset class="flex flex-col gap-y-1">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" class="px-4 py-2 border rounded-xl focus:outline focus:outline-gray-500">
+                    </fieldset>
+    
+                    <fieldset  class="flex flex-col gap-y-1">
+                        <label for="username">Username</label>
+                        <input id="username" type="text"  class="px-4 py-2 border rounded-xl focus:outline focus:outline-gray-500">
+                    </fieldset>
+    
+                    <fieldset  class="flex flex-col gap-y-1">
+                        <div class="flex items-center">
+                            <label for="email">Password</label>
+                            <button id="show-password" data-show="false" class="group/show-password ml-auto flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 group-data-[show=true]/show-password:hidden">
+                                    <path d="M3.53 2.47a.75.75 0 00-1.06 1.06l18 18a.75.75 0 101.06-1.06l-18-18zM22.676 12.553a11.249 11.249 0 01-2.631 4.31l-3.099-3.099a5.25 5.25 0 00-6.71-6.71L7.759 4.577a11.217 11.217 0 014.242-.827c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113z" />
+                                    <path d="M15.75 12c0 .18-.013.357-.037.53l-4.244-4.243A3.75 3.75 0 0115.75 12zM12.53 15.713l-4.243-4.244a3.75 3.75 0 004.243 4.243z" />
+                                    <path d="M6.75 12c0-.619.107-1.213.304-1.764l-3.1-3.1a11.25 11.25 0 00-2.63 4.31c-.12.362-.12.752 0 1.114 1.489 4.467 5.704 7.69 10.675 7.69 1.5 0 2.933-.294 4.242-.827l-2.477-2.477A5.25 5.25 0 016.75 12z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 hidden group-data-[show=true]/show-password:block">
+                                    <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                </svg>                                  
+                                <span class="ml-2">Hide</span>
+                            </button>
+                        </div>
+                        <input type="password"  class="px-4 py-2 border rounded-xl focus:outline focus:outline-gray-500">
+    
+                        <ul class="grid grid-cols-1 text-sm sm:grid-cols-2">
+                            <li class="flex items-center gap-x-1 before:content-['•'] before:text-2xl">Use 8 or more characters</li>
+                            <li class="flex items-center gap-x-1 before:content-['•'] before:text-2xl">One Uppercase character</li>
+                            <li class="flex items-center gap-x-1 before:content-['•'] before:text-2xl">One lowercase character</li>
+                            <li class="flex items-center gap-x-1 before:content-['•'] before:text-2xl">One special character</li>
+                            <li class="flex items-center gap-x-1 before:content-['•'] before:text-2xl">One number</li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+                <label for="newsletter" class="flex items-start gap-x-2">
+                    <div class="pt-1">
+                        <input type="checkbox" name="newsletter" id="newsletter" class="accent-slate-800">
+                    </div>
+
+                    <p class="text-sm">I want to receive emails about the product, feature updates, events, and marketing promotions.</p>
+                </label>
+
+                <p class="my-4 text-sm">By creating an account, you agree to the <a class="underline" href="#">Terms of use</a> and <a class="underline" href="#">Privacy Policy</a>. </p>
+
+                <div class="space-y-1">
+                    <button class="px-8 py-4 rounded-full bg-neutral-300 text-white hover:bg-neutral-400 focus:bg-neutral-400 duration-200">Create an account</button>
+                    
+                    <p class="text-sm">Already have an ccount? <a class="underline" href="#">Log in</a></p>
+                </div>
+            </form>
+
+            <div class="order-1 h-72 min-h-[200px] overflow-hidden sm:order-2 sm:col-span-5 sm:h-full">
+                <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="Dark 3D Rendering Wallpaper from Sebastian Svenson, on Unsplash">
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
