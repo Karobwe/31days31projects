@@ -1,4 +1,5 @@
 const showPassword = document.querySelector("#show-password");
+const password = document.querySelector("#password");
 
 showPassword.addEventListener("click", function() {
     toggleState(showPassword);
@@ -9,7 +10,9 @@ const toggleState = (element) => {
 
     if (state === "true") {
         element.setAttribute("data-show", false);
+        password.setAttribute("type", "password");
     } else {
         element.setAttribute("data-show", true);
+        password.setAttribute("type", "text");
     }
 };
